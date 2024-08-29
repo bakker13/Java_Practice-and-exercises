@@ -9,6 +9,14 @@ public class Bank {
         this.name = name;
     }
 
+    @Override
+    public String toString() {
+        return "Bank{" +
+                "name='" + name + '\'' +
+                ", customers=" + customers +
+                '}';
+    }
+
     private Customer getCustomer(String customerName) {
 
         for (var customer : customers) {
