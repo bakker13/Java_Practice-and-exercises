@@ -17,5 +17,13 @@ record Customer (String name, ArrayList<Double> transactions) {
             Bank bank = new Bank("Revolut");
             bank.addNewCustomer("Jane S", 500.0);
             System.out.println(bank);
+
+            bank.addTransaction("Jane S", -10.25);
+            bank.addTransaction("jane S", -75.01);
+            bank.printStatement("Jane S");
+            System.out.println("-".repeat(10));
+            bank.printStatement("Jane Doe");
+            bank.addTransaction("Jane M", 120);
+            bank.printStatement("Jane M");
         }
     }
