@@ -5,11 +5,13 @@ record Customer (String name, ArrayList<Double> transactions) {
         this(name.toUpperCase(), new ArrayList<Double>(500));
         transactions.add(initialDeposit);
     }
+}
 
-public class Main {
+    public class Main {
 
-    public static void main(String[] args) {
+        public static void main(String[] args) {
 
+            Customer jim = new Customer("Jim B", 1000.0);
+            System.out.println(jim);
         }
     }
-}
