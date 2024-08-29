@@ -13,5 +13,9 @@ record Customer (String name, ArrayList<Double> transactions) {
 
             Customer jim = new Customer("Jim B", 1000.0);
             System.out.println(jim);
+
+            Bank bank = new Bank("Revolut");
+            bank.addNewCustomer("Jane S", 500.0);
+            System.out.println(bank);
         }
     }
